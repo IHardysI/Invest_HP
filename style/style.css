@@ -102,6 +102,10 @@ body {
     color: black;
 }
 
+.button-big {
+    background: #ECB235;
+}
+
 .title {
     font-weight: 500;
     font-size: 18px;
@@ -495,7 +499,7 @@ body._pc .header__list > li:hover .header__podlist {
 
 
 .triple {
-    
+    margin-bottom: 127px;
 }
 
 .triple__container {
@@ -544,6 +548,104 @@ body._pc .header__list > li:hover .header__podlist {
 
 
 /* nabidka */
+
+
+.nabidka {
+    
+}
+
+.nabidka__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nabidka__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+
+    margin-bottom: 60px;
+    color: black;  /*for a while*/
+}
+
+.nabidka__list {
+    display: flex;
+    justify-content: center;
+}
+
+.nabidka__item {
+    min-width: 361px;
+    min-height: 610px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 6px;
+}
+
+.nabidka__item_1 {
+    background-image: url(../img/four-one.png);
+}
+
+.nabidka__small-title {
+    margin-left: 23px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+
+.nabidka__under-title {
+    margin-bottom: 111px;
+    margin-left: 23px;
+
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+}
+
+.nabidka__item_2 {
+    background-image: url(../img/four-two.png);
+}
+
+.nabidka__item_3 {
+    background-image: url(../img/four-three.png);
+}
+
+.nabidka__item_4 {
+    background-image: url(../img/four-four.png);
+}
+
+.nabidka__button-box {
+    display: flex;
+    transform: translate(2px, -62px);
+    justify-content: end;
+}
+
+.nabidka__button {
+    display: flex;
+    padding: 51px 60px 50px 41px;
+    display: inline-block;
+}
+
+.nabidka__vice {
+    margin-right: 22px;
+}
+
+.nabidka__img {
+
+}
+
+
+/* produkty */
+
+
 
 
 
