@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invest</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="/assets/src/normalize.css">
+    <link rel="stylesheet" href="/assets/src/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -46,7 +46,7 @@
                 </div>
                 <form class="header__search">
                     <input type="text" placeholder="Napište, co hledáte" class="header__input">
-                    <button class="header__magnefing" type="submit"><img src="img/search.svg" alt=""></button>
+                    <button class="header__magnefing" type="submit"><img src="/assets/img/search.svg" alt=""></button>
                 </form>
                 <ul class="header__list">
                     <li class="header__item header__item_1">
@@ -63,10 +63,10 @@
                         </ul>
                     </li>
                     <li class="header__item header__item_2">
-                        <span class="header__kosik">Košík</span> <img src="img/kosik-circle.svg" alt="kosik" class="header__kosik_2">
+                        <span class="header__kosik">Košík</span> <img src="/assets/img/kosik-circle.svg" alt="kosik" class="header__kosik_2">
                     </li>
                     <li class="header__item header__item_3">
-                        <img src="img/profile.svg" alt="profile">
+                        <img src="/assets/img/profile.svg" alt="profile">
                     </li>
                 </ul>
             </div>
@@ -161,7 +161,7 @@
                         <div class="nabidka__button-box">
                             <a href="#" class="nabidka__button button-big">
                                 <span class="nabidka__vice">Zobrazit více</span>
-                                <img src="img/arrow-black.svg" alt="arrow" class="nabidka__img">
+                                <img src="/assets/img/arrow-black.svg" alt="arrow" class="nabidka__img">
                             </a>
                         </div>
                     </div>
@@ -179,14 +179,21 @@
                                 Doporučené
                             </li>
                         </ul>
-                        u
+                        <div class="produkty__content">
+
+
+                            <button onclick="loadData()" class="load-more-button"></button>
+                        </div>
                     </div>
                 </section>
             </section>
         </main>
         <footer class="footer">footer</footer>
     </div>
-    <script src="script/script.js"></script>
+    <script src="/assets/src/script.js"></script>
+    <script>
+        loadInitialItems();
+    </script>
 </body>
 </html>
 

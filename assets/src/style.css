@@ -3,13 +3,13 @@
 
 @font-face {
     font-family: MontserratMedium;
-    src: url(../fonts/Montserrat-Medium.ttf) format("truetype");
+    src: url(../src/fonts/Montserrat-Medium.ttf) format("truetype");
     font-style: normal;
     font-weight: 500;
 }
 @font-face {
     font-family: MontserratBold;
-    src: url(../fonts/Montserrat-Bold.ttf) format("truetype");
+    src: url(../src/fonts/Montserrat-Bold.ttf) format("truetype");
     font-style: normal;
     font-weight: 700;
 }
