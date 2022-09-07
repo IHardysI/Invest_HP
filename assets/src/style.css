@@ -646,7 +646,162 @@ body._pc .header__list > li:hover .header__podlist {
 /* produkty */
 
 
+.produkty {
 
+}
+
+.produkty__container {
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+}
+
+.produkty__choose-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.produkty__choose-item {
+
+}
+
+.produkty__choose-item_1 {
+
+}
+
+.produkty__choose-item_2 {
+
+}
+
+.produkty__choose-item_3 {
+
+}
+
+.produkty__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produkty__content div {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 100px;
+}
+
+.produkty__item {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    max-width: 367px;
+    max-height: 552px;
+
+    padding: 14px 12px;
+
+    transition-duration: 500ms;
+}
+
+.produkty__item:hover {
+    border: 1px solid #C4C4C4;
+    transform: scale(1.04);
+}
+
+.produkty__img {
+    width: 100%;
+}
+
+.produkty__img_1 {
+
+}
+
+.produkty__flags {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 9px;
+
+    position: absolute;
+    left: 63%;
+    top: 10%;
+
+
+}
+
+.produkty__flag {
+    min-width: 122px;
+    height: 31px;
+
+    padding-top: 5px;
+    padding-left: 17px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+
+}
+
+.produkty__flag_1 {
+    background: #63DA46;
+}
+
+.produkty__flag_2 {
+    background: #F24D4D;
+}
+
+.produkty__text {
+
+}
+
+.produkty__down-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.produkty__the-down-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.produkty__dispozice {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.produkty__cena {
+
+}
+
+.produkty__add-to {
+
+}
+
+.produkty__add-to_icon {
+
+}
+
+.load-more-button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    
+    border: 1px solid #000000;
+
+    color: #151515;
+    background-color: transparent;
+
+    padding: 20px 40px;
+}
 
 
 
