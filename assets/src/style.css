@@ -491,7 +491,7 @@ body._pc .header__list > li:hover .header__podlist {
 
 
 .triple-section {
-
+    background: linear-gradient(white 24%, rgba(19, 19, 19, 1) 24% 53%, white 53% 100%);
 }
 
 
@@ -566,7 +566,7 @@ body._pc .header__list > li:hover .header__podlist {
     text-align: center;
 
     margin-bottom: 60px;
-    color: black;  /*for a while*/
+    color: white;
 }
 
 .nabidka__list {
@@ -685,12 +685,12 @@ body._pc .header__list > li:hover .header__podlist {
     align-items: center;
 }
 
-.produkty__content div {
+/* .produkty__content div {
     display: flex;
     justify-content: center;
 
     margin-bottom: 100px;
-}
+} */
 
 .produkty__item {
     display: flex;
@@ -698,8 +698,8 @@ body._pc .header__list > li:hover .header__podlist {
 
     position: relative;
 
-    max-width: 367px;
-    max-height: 552px;
+    min-width: 367px;
+    min-height: 552px;
 
     padding: 14px 12px;
 
@@ -801,6 +801,7 @@ body._pc .header__list > li:hover .header__podlist {
     background-color: transparent;
 
     padding: 20px 40px;
+    margin-bottom: 90px;
 }
 
 

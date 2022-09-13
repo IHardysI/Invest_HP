@@ -47,13 +47,14 @@ if (iconMenu) {
 
 
 // Data
+// "../assets/src/products.json"
 
-
-fetch("../assets/src/products.json")
+fetch('./assets/src/products.json')
 .then(response => response.json())
 .then(products => {
     localStorage.setItem("products", JSON.stringify(products))
-});
+})
+.catch(error => console.log(error));
 
 let container = document.querySelector(".produkty__content");
 let loadMoreButton = document.querySelector(".produkty__content button");
@@ -69,31 +70,31 @@ function loadInitialItems() {
     for(let product of Object.keys(products)){
         if(counter < initialItems){
             out += `
-                <div class="produkty__item">
-                    <div class="produkty__flags">
-                        <p class="produkty__flag produkty__flag_1">${product.flags}</p>
-                        <p class="produkty__flag produkty__flag_2">${product.flags}</p>
-                    </div>
-                    <img src="${product.imgSrc}" alt="2" class="produkty__img produkty__img_1">
-                    <a href="#" class="produkty__text">
-                        ${product.title}
-                    </a>
-                    <div class="produkty__down-card">
-                        <div class="produkty__the-down-card">
-                            <p class="produkty__dispozice">
-                                ${product.availability}
-                            </p>
-                            <p class="produkty__cena">
-                                ${product.price} CZK
-                            </p>
+                    <div class="produkty__item">
+                        <div class="produkty__flags">
+                            <p class="produkty__flag produkty__flag_1">${product.flags}</p>
+                            <p class="produkty__flag produkty__flag_2">${product.flags}</p>
                         </div>
-                        <button class="produkty__add-to">
-                            <a href="#">
-                                <img src="/assets/img/shoppingCart.svg" alt="shoppingCart" class="produkty__add-to_icon">
-                            </a>
-                        </button>
+                        <img src="${product.imgSrc}" alt="2" class="produkty__img produkty__img_1">
+                        <a href="#" class="produkty__text">
+                            ${product.title}
+                        </a>
+                        <div class="produkty__down-card">
+                            <div class="produkty__the-down-card">
+                                <p class="produkty__dispozice">
+                                    ${product.availability}
+                                </p>
+                                <p class="produkty__cena">
+                                    ${product.price} CZK
+                                </p>
+                            </div>
+                            <button class="produkty__add-to">
+                                <a href="#">
+                                    <img src="/assets/img/shoppingCart.svg" alt="shoppingCart" class="produkty__add-to_icon">
+                                </a>
+                            </button>
+                        </div>
                     </div>
-                </div>
             `;
         }
         counter++;
