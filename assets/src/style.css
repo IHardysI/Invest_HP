@@ -559,6 +559,16 @@ body._pc .header__list > li:hover .header__podlist {
     flex-direction: column;
 }
 
+.nabidka__link {
+    min-width: 361px;
+    min-height: 610px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 6px;
+}
+
 .nabidka__title {
     font-weight: 500;
     font-size: 36px;
@@ -575,13 +585,13 @@ body._pc .header__list > li:hover .header__podlist {
 }
 
 .nabidka__item {
-    min-width: 361px;
-    min-height: 610px;
 
     display: flex;
     flex-direction: column;
     justify-content: end;
     gap: 6px;
+
+    position: relative;
 }
 
 .nabidka__item_1 {
@@ -589,6 +599,8 @@ body._pc .header__list > li:hover .header__podlist {
 }
 
 .nabidka__small-title {
+    position: relative;
+
     margin-left: 23px;
 
     font-weight: 500;
@@ -599,6 +611,8 @@ body._pc .header__list > li:hover .header__podlist {
 }
 
 .nabidka__under-title {
+    position: relative;
+
     margin-bottom: 111px;
     margin-left: 23px;
 
@@ -608,6 +622,23 @@ body._pc .header__list > li:hover .header__podlist {
     line-height: 44px;
 
     color: #FFFFFF;
+}
+
+.nabidka__back {
+    min-width: 361px;
+    min-height: 610px;
+
+    background-color:  rgba(236, 178, 53);
+
+    position: absolute;
+
+    opacity: 0;
+
+    transition: 500ms;
+}
+
+.nabidka__back:hover {
+    opacity: 0.7;
 }
 
 .nabidka__item_2 {
@@ -620,6 +651,10 @@ body._pc .header__list > li:hover .header__podlist {
 
 .nabidka__item_4 {
     background-image: url(../img/four-four.png);
+}
+
+.nabidka__item:hover {
+    background-color: rgba(236, 178, 53, 0.7);
 }
 
 .nabidka__button-box {
