@@ -49,15 +49,15 @@ if (iconMenu) {
 // Data
 // "../assets/src/products.json"
 
-fetch('./assets/src/products.json')
+fetch('/assets/src/products.json')
 .then(response => response.json())
 .then(products => {
     localStorage.setItem("products", JSON.stringify(products))
 })
-.catch(error => console.log(error));
 
 let container = document.querySelector(".produkty__content");
 let loadMoreButton = document.querySelector(".produkty__content button");
+let box = document.querySelector('.produkty__box')
 
 let initialItems = 4;
 let loadItems = 4;
@@ -67,7 +67,7 @@ function loadInitialItems() {
     let products = JSON.parse(localStorage.getItem("products"));
     let out = "";
     let counter = 0;
-    for(let product of Object.keys(products)){
+    for(let product of products){
         if(counter < initialItems){
             out += `
                     <div class="produkty__item">
@@ -75,7 +75,9 @@ function loadInitialItems() {
                             <p class="produkty__flag produkty__flag_1">${product.flags}</p>
                             <p class="produkty__flag produkty__flag_2">${product.flags}</p>
                         </div>
-                        <img src="${product.imgSrc}" alt="2" class="produkty__img produkty__img_1">
+                        <div class="produkty__imgBox">
+                            <img src="${product.imgSrc}" alt="2" class="produkty__img produkty__img_1">
+                        </div>
                         <a href="#" class="produkty__text">
                             ${product.title}
                         </a>
@@ -100,9 +102,9 @@ function loadInitialItems() {
         counter++;
     }
 
-    let div = document.createElement("div");
-    container.insertBefore(div, loadMoreButton);
-    div.innerHTML = out;
+    // let div = document.createElement("div");
+    // container.insertBefore(div, loadMoreButton);
+    box.innerHTML = out;
 }
 
 
@@ -112,7 +114,7 @@ function loadData(){
 
     let out = "";
     let counter = 0;
-    for(let product of Object.keys(products)){
+    for(let product of products){
         if(counter >= currentDisplayedItems && counter < loadItems + currentDisplayedItems){
             out += `
                 <div class="produkty__item">
@@ -120,7 +122,9 @@ function loadData(){
                     <p class="produkty__flag produkty__flag_1">${product.flags}</p>
                     <p class="produkty__flag produkty__flag_2">${product.flags}</p>
                 </div>
-                <img src="${product.imgSrc}" alt="2" class="produkty__img produkty__img_1">
+                <div class="produkty__imgBox">
+                    <img src="${product.imgSrc}" alt="2" class="produkty__img produkty__img_1">
+                </div>
                 <a href="#" class="produkty__text">
                     ${product.title}
                 </a>
@@ -145,17 +149,17 @@ function loadData(){
         counter++;
     }
 
-    let div = document.createElement("div");
-    container.insertBefore(div, loadMoreButton);
-    div.innerHTML = out;
-    div.style.opacity = 0;
+    // let div = document.createElement("div");
+    // container.insertBefore(div, loadMoreButton);
+    box.innerHTML = out;
+    // div.style.opacity = 0;
 
 
     if(document.querySelectorAll(".product").length == products.length){
         loadMoreButton.style.display = "none"
     }
 
-    fadeIn(div);
+    fadeIn(box);
 }
 
 

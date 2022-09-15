@@ -692,14 +692,27 @@ body._pc .header__list > li:hover .header__podlist {
     margin-bottom: 100px;
 } */
 
+.produkty__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produkty__imgBox{
+    min-width: 384px;
+    min-height: 345px;
+    
+}
+
 .produkty__item {
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
 
     position: relative;
 
-    min-width: 367px;
-    min-height: 552px;
+    max-width: 367px;
+    max-height: 552px;
 
     padding: 14px 12px;
 
