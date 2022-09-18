@@ -49,7 +49,7 @@ if (iconMenu) {
 // Data
 // "../assets/src/products.json"
 
-fetch('/assets/src/products.json')
+fetch('products.json')
 .then(response => response.json())
 .then(products => {
     localStorage.setItem("products", JSON.stringify(products))
