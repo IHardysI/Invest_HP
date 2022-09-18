@@ -159,7 +159,7 @@ function loadData(){
         loadMoreButton.style.display = "none"
     }
 
-    fadeIn(box);
+    fadeIn();
 }
 
 
