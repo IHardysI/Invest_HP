@@ -953,7 +953,7 @@ body._pc .header__list > li:hover .header__podlist {
 }
 
 .blog__item_1 {
-    background-image: url(/assets/img/five-one.png);
+    background-image: url(../img/five-one.png);
 }
 
 .blog__link {
@@ -1003,22 +1003,22 @@ body._pc .header__list > li:hover .header__podlist {
 }
 
 .blog__item_2 {
-    background-image: url(/assets/img/five-two.png);
+    background-image: url(../img/five-two.png);
 }
 
 .blog__item_3 {
-    background-image: url(/assets/img/five-three.png);
+    background-image: url(../img/five-three.png);
 }
 
 .blog__item_4 {
-    background-image: url(/assets/img/five-four.png);
+    background-image: url(../img/five-four.png);
 }
 
 .blog__item_5 {
     min-width: 960px;
     min-height: 333px;
 
-    background-image: url(/assets/img/five-five.png);
+    background-image: url(../img/five-five.png);
 }
 
 .blog__button-box {
