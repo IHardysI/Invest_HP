@@ -126,6 +126,13 @@ body {
     color: #FFFFFF;
 }
 
+.logo {
+    padding: 26px 101px 23px 79px;
+    background-color: #E9E9E9;
+    font-size: 14px;
+    z-index: 6;
+}
+
 /* .dot {
     width: 10px;
     height: 10px;
@@ -173,12 +180,6 @@ body {
 
 }
 
-.header__logo {
-    padding: 26px 101px 23px 79px;
-    background-color: #E9E9E9;
-    font-size: 14px;
-    z-index: 6;
-}
 @media (max-width: 1200px) {
     .header__logo {
         padding: 20px 80px 20px 70px;
@@ -1025,7 +1026,7 @@ body._pc .header__list > li:hover .header__podlist {
     display: flex;
     justify-content: flex-end;
 
-    transform: translate(2px, -62px);
+    transform: translate(0px, -62px);
 }
 
 .blog__button {
@@ -1049,7 +1050,7 @@ body._pc .header__list > li:hover .header__podlist {
 
 
 .icons {
-
+    padding: 148px 0;
 }
 
 .icons__container {
@@ -1060,15 +1061,17 @@ body._pc .header__list > li:hover .header__podlist {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 64px;
 }
 
 .icons__item {
-
+    
 }
 
 .icons__box-item {
     display: flex;
     align-items: center;
+    gap: 21px;
 }
 
 .icons__img-box {
@@ -1080,6 +1083,249 @@ body._pc .header__list > li:hover .header__podlist {
 }
 
 .icons__line {
+    border-left: 1px solid #C4C4C4;
+    height: 119px;
+}
+
+
+/* kontakt */
+
+
+.kontakt {
+    background-color:  #ECB235;
+}
+
+.kontakt__container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 0;
+
+    background-image: url(../img/comment.svg);
+    background-repeat: no-repeat;
+    background-position-x: 12rem;
+    background-position-y: -7.5rem;
+}
+
+.kontakt__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    
+}
+
+.kontakt__form {
+
+}
+
+#email {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    padding: 46px 58px 49px 58px;
+
+    min-width: 500px;
+
+    outline: none;
+
+    margin-right: 25px;
+}
+
+#submit {
+    padding: 50px ;
+
+    min-width: 243px;
+
+    background-color: black;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.kontakt__btn-text {
+    padding-right: 47px;
+}
+
+.kontakt__btn-img {
+
+}
+
+
+/* footer */
+
+
+.footer {
+    background-color: #131313;
+
+    padding: 87px 0 75px 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.logo {
+
+}
+
+.logo_footer {
+
+}
+
+.footer__first-block {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer__second-block {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 54px;
+}
+
+.footer__second-blok_1 {
+    display: flex;
+    gap: 49px;
+}
+
+.footer__list-nakoupit {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer__list-nakoupit-item {
+    
+}
+
+.footer__title {
+    color: white;
+    
+    font-family: MontserratBold;
+
+    margin-bottom: 3rem;
+}
+
+.footer__link {
+    color: white;
+}
+
+.footer__list-objednavky {
+    margin-right: 34px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer__list-objednavky-item {
+
+}
+
+.footer__list-spolecnosti {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer__list-spolecnosti-item {
+
+}
+
+.footer__second-block_2 {
+
+}
+
+.footer__list-kontakt {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.footer__list-kontakt-item {
+    display: flex;
+    align-items: center;
+}
+
+.footer__instagram {
+    margin-right: 0.3rem
+}
+
+.footer__first-icon {
+
+}
+
+.instagram-icon {
+
+}
+
+.footer__facebook {
+
+}
+
+.facebook-icon {
+
+}
+
+.phone {
+    margin-right: 0.6rem;
+}
+
+.footer__phone-number {
+    color: white;
+}
+
+.mail {
+    margin-right: 0.7rem;
+}
+
+.footer__mail-adress {
+    color: white;
+}
+
+.footer__three-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left-item {
+    color: white;
+}
+
+.footer__right-item {
+
+}
+
+.footer__miranda {
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer__left-miranda {
+
+}
+
+.footer__center-miranda {
+
+}
+
+.footer__right-miranda {
 
 }
 
