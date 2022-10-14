@@ -175,3 +175,10 @@ function fadeIn(div){
     }, 30);
 }
 
+// new Swiper('.big-pic__container', {
+//     pagination: {
+//         el: 'big-pic__dots',
+//         clickable: true,
+//     },
+// });
+

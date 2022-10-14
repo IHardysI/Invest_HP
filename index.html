@@ -7,6 +7,7 @@
     <title>Invest</title>
     <link rel="stylesheet" href="assets/src/normalize.css">
     <link rel="stylesheet" href="assets/src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="wrapper">
@@ -15,60 +16,62 @@
                 <a href="#" class="logo">
                     LOGO
                 </a>
-                <div class="menu header__menu">
-                    <div class="menu__icon">
-                        <span></span>
+                <div class="header__block">
+                    <div class="menu header__menu">
+                        <div class="menu__icon">
+                            <span></span>
+                        </div>
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        <span class="menu__produkty">Produkty</span> <i class="arrow arrow_down"></i>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        Akční nabídka
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        O nás
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">
+                                        Kontakt
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav class="menu__body">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                    <span class="menu__produkty">Produkty</span> <i class="arrow arrow_down"></i>
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                    Akční nabídka
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                    O nás
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">
-                                    Kontakt
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <form class="header__search">
+                        <input type="text" placeholder="Napište, co hledáte" class="header__input">
+                        <button class="header__magnefing" type="submit"><img src="assets/img/search.svg" alt=""></button>
+                    </form>
+                    <ul class="header__list">
+                        <li class="header__item header__item_1">
+                            <span class="header__mena">
+                                <span class="header__czk">CZK</span> <i class="arrow arrow_down"></i>
+                            </span>
+                            <ul class="header__podlist">
+                                <li class="header__poditem header__poditem_2">
+                                    EUR
+                                </li>
+                                <li class="header__poditem header__poditem_3">
+                                    USD
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__item header__item_2">
+                            <span class="header__kosik">Košík</span> <img src="assets/img/kosik-circle.svg" alt="kosik" class="header__kosik_2">
+                        </li>
+                        <li class="header__item header__item_3">
+                            <img src="assets/img/profile.svg" alt="profile">
+                        </li>
+                    </ul>
                 </div>
-                <form class="header__search">
-                    <input type="text" placeholder="Napište, co hledáte" class="header__input">
-                    <button class="header__magnefing" type="submit"><img src="assets/img/search.svg" alt=""></button>
-                </form>
-                <ul class="header__list">
-                    <li class="header__item header__item_1">
-                        <span class="header__mena">
-                            <span class="header__czk">CZK</span> <i class="arrow arrow_down"></i>
-                        </span>
-                        <ul class="header__podlist">
-                            <li class="header__poditem header__poditem_2">
-                                EUR
-                            </li>
-                            <li class="header__poditem header__poditem_3">
-                                USD
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header__item header__item_2">
-                        <span class="header__kosik">Košík</span> <img src="assets/img/kosik-circle.svg" alt="kosik" class="header__kosik_2">
-                    </li>
-                    <li class="header__item header__item_3">
-                        <img src="assets/img/profile.svg" alt="profile">
-                    </li>
-                </ul>
             </div>
         </header>
         <main class="main">
@@ -85,11 +88,7 @@
                             Zobrazit
                         </a>
                     </div>
-                    <div class="big-pic__dots">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
+                    <div class="big-pic__dots"></div>
                 </div>
             </section>
             <section class="triple-section">
@@ -331,7 +330,7 @@
                     </h2>
                     <form action="#" class="kontakt__form">
                         <input name="email" id="email" type="email" placeholder="@Zadej svuj email">
-                        <button id="submit" name="submit" type="submit"><span class="kontakt__btn-text">Odoslať</span> <img src="assets/img/arrow-white.svg" alt="arrow-white" class="kontakt__btn-img"></button>
+                        <button id="submit" name="submit" type="submit"><span class="kontakt__btn-text">Odeslat</span> <img src="assets/img/arrow-white.svg" alt="arrow-white" class="kontakt__btn-img"></button>
                     </form>
                 </div>
             </section>
@@ -429,11 +428,11 @@
                                 </a>
                             </li>
                             <li class="footer__list-kontakt-item">
-                                <img src="assets/img/phone.svg" alt="phone" class="footer__first-icon phone">
+                                <a href="tel:+421919163181"><img src="assets/img/phone.svg" alt="phone" class="footer__first-icon phone"></a>
                                 <a href="tel:+421919163181" class="footer__phone-number">+421919163181</a>
                             </li>
                             <li class="footer__list-kontakt-item">
-                                <img src="assets/img/mail.svg" alt="mail" class="footer__first-icon mail">
+                                <a href="mailto:info@constantinvest.com"><img src="assets/img/mail.svg" alt="mail" class="footer__first-icon mail"></a>
                                 <a href="mailto:info@constantinvest.com" class="footer__mail-adress">info@constantinvest.com</a>
                             </li>
                         </ul>
@@ -441,7 +440,7 @@
                 </div>
                 <div class="footer__three-block">
                     <p class="footer__left-item">
-                        Copyright 2021 Constant Invest
+                        Copyright 2022 Constant Invest
                     </p>
                     <p class="footer__right-item">
                         <a href="https://www.mirandamedia.cz/" class="footer__miranda" target="_blank">
@@ -454,6 +453,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/src/script.js"></script>
     <script src="assets/src/products.json"></script>
     <script>
