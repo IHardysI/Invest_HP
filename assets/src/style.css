@@ -156,6 +156,10 @@ body._lock {
     z-index: 10;
 }
 
+#swiper {
+    position: absolute;
+}
+
 /* .dot {
     width: 10px;
     height: 10px;
@@ -541,7 +545,7 @@ body._pc .header__list > li:hover .header__podlist {
 }
 
 .big-pic__container {
-    background-image: url(../img/main-pic.jpg);
+    /* background-image: url(../img/main-pic.jpg); */
     min-height: 100%;
     min-width: 100%;
     background-repeat: no-repeat;
@@ -573,6 +577,10 @@ body._pc .header__list > li:hover .header__podlist {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    position: relative;
+
+    z-index: 5;
 }
 
 .big-pic__title {
