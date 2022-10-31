@@ -1,3 +1,5 @@
+
+
 const isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -46,8 +48,8 @@ if (iconMenu) {
 }
 
 
-// Data
-// "../assets/src/products.json"
+
+// json-data
 
 fetch('/assets/src/products.json')
 .then(response => response.json())
